@@ -1,5 +1,5 @@
 ## Clase 5
-### Pruebas Unitarias
+### Unidades de Testeo / Pruebas Unitarias
 
 - `assert`
 - `pytest`
@@ -7,7 +7,7 @@
 - Organización de Pruebas en Carpetas
 - Resumen
 
-### Pruebas Unitarias
+### Unidades de Testeo / Pruebas Unitarias
 
 Hasta ahora, probablemente has estado probando tu propio código usando declaraciones `print`. Alternativamente, ¡puedes haber confiado en CS50 para probar tu código por ti! En la industria, es más común escribir código para probar tus propios programas.
 
