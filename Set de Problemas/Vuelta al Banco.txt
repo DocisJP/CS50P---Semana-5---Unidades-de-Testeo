@@ -1,0 +1,77 @@
+### De vuelta al Banco
+
+En un archivo llamado `bank.py`, reimplementa "Home Federal Savings Bank" del Conjunto de Problemas 1, reestructurando tu código según lo indicado a continuación, donde `value` espera una cadena (`str`) como entrada y devuelve un entero (`int`): 0 si esa cadena comienza con "hello", 20 si la cadena comienza con una "h" (pero no con "hello"), o 100 en cualquier otro caso, tratando la cadena sin distinción entre mayúsculas y minúsculas. Puedes asumir que la cadena pasada a la función `value` no contendrá espacios iniciales. Solo `main` debería llamar a `print`.
+
+```python
+def main():
+    ...
+
+
+def value(greeting):
+    ...
+
+
+if __name__ == "__main__":
+    main()
+```
+
+Luego, en un archivo llamado `test_bank.py`, implementa tres o más funciones que prueben minuciosamente tu implementación de `value`, cada una de cuyos nombres debería comenzar con `test_` para que puedas ejecutar tus pruebas con:
+
+```sh
+pytest test_bank.py
+```
+
+#### Consejos
+
+**Antes de Comenzar**
+
+Inicia sesión en cs50.dev, haz clic en tu ventana de terminal y ejecuta `cd` por sí solo. Deberías ver que el prompt de la ventana de tu terminal se parece a lo siguiente:
+
+```
+$
+```
+
+Luego ejecuta:
+
+```sh
+mkdir test_bank
+```
+
+para crear una carpeta llamada `test_bank` en tu espacio de código.
+
+Luego ejecuta:
+
+```sh
+cd test_bank
+```
+
+para cambiar de directorio a esa carpeta. Ahora deberías ver el prompt de tu terminal como `test_bank/ $`. Ahora puedes ejecutar:
+
+```sh
+code test_bank.py
+```
+
+para crear un archivo llamado `test_bank.py` donde escribirás tus pruebas.
+
+**Cómo Probar**
+
+Para probar tus pruebas, ejecuta `pytest test_bank.py`. Asegúrate de tener una copia del archivo `bank.py` en la misma carpeta. Intenta usar versiones correctas e incorrectas de `bank.py` para determinar qué tan bien tus pruebas detectan errores:
+
+1. Asegúrate de tener una versión correcta de `bank.py`. Ejecuta tus pruebas ejecutando `pytest test_bank.py`. `pytest` debería mostrar que todas tus pruebas han pasado.
+2. Modifica la versión correcta de `bank.py`, cambiando los valores proporcionados para cada saludo. Por ejemplo, tu programa podría proporcionar erróneamente $100 a un cliente saludado con "Hello" y $0 a un cliente saludado con "What’s up"! Ahora, ejecuta tus pruebas ejecutando `pytest test_bank.py`. `pytest` debería mostrar que al menos una de tus pruebas ha fallado.
+   
+Puedes ejecutar el siguiente comando para verificar tus pruebas usando `check50`, un programa que CS50 usará para probar tu código cuando lo envíes. (¡Ahora hay pruebas para probar tus pruebas!). Asegúrate de probar tus pruebas tú mismo y determinar qué pruebas son necesarias para garantizar que `bank.py` se verifique minuciosamente.
+
+```sh
+check50 cs50/problems/2022/python/tests/bank
+```
+
+Las caritas verdes significan que tu programa ha pasado una prueba. Las caritas rojas indicarán que tu programa produjo algo inesperado. Visita la URL que `check50` proporciona para ver la entrada que `check50` le dio a tu programa, qué salida esperaba y qué salida realmente dio tu programa.
+
+**Cómo Enviar**
+
+En tu terminal, ejecuta el siguiente comando para enviar tu trabajo:
+
+```sh
+submit50 cs50/problems/2022/python/tests/bank
+```

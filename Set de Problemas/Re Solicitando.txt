@@ -1,0 +1,77 @@
+### Re-solicitando una Placa Personalizada
+
+En un archivo llamado `plates.py`, reimplementa "Vanity Plates" del Conjunto de Problemas 2, reestructurando tu código según lo indicado a continuación, donde `is_valid` aún espera una cadena (`str`) como entrada y devuelve `True` si esa cadena cumple con todos los requisitos y `False` si no los cumple, pero `main` solo se llama si el valor de `__name__` es `"__main__"`:
+
+```python
+def main():
+    ...
+
+
+def is_valid(s):
+    ...
+
+
+if __name__ == "__main__":
+    main()
+```
+
+Luego, en un archivo llamado `test_plates.py`, implementa cuatro o más funciones que prueben minuciosamente tu implementación de `is_valid`, cada una de cuyos nombres debería comenzar con `test_` para que puedas ejecutar tus pruebas con:
+
+```sh
+pytest test_plates.py
+```
+
+#### Consejos
+
+**Antes de Comenzar**
+
+Inicia sesión en cs50.dev, haz clic en tu ventana de terminal y ejecuta `cd` por sí mismo. Deberías ver que el prompt de la ventana de tu terminal se parece a lo siguiente:
+
+```
+$
+```
+
+Luego ejecuta:
+
+```sh
+mkdir test_plates
+```
+
+para crear una carpeta llamada `test_plates` en tu espacio de código.
+
+Luego ejecuta:
+
+```sh
+cd test_plates
+```
+
+para cambiar de directorio a esa carpeta. Ahora deberías ver el prompt de tu terminal como `test_plates/ $`. Ahora puedes ejecutar:
+
+```sh
+code test_plates.py
+```
+
+para crear un archivo llamado `test_plates.py` donde escribirás tus pruebas.
+
+**Cómo Probar**
+
+Para probar tus pruebas, ejecuta `pytest test_plates.py`. Asegúrate de tener una copia del archivo `plates.py` en la misma carpeta. Intenta usar versiones correctas e incorrectas de `plates.py` para determinar qué tan bien tus pruebas detectan errores:
+
+1. Asegúrate de tener una versión correcta de `plates.py`. Ejecuta tus pruebas ejecutando `pytest test_plates.py`. `pytest` debería mostrar que todas tus pruebas han pasado.
+2. Modifica la versión correcta de `plates.py`, quizás eliminando algunas de sus restricciones. Por ejemplo, tu programa podría imprimir erróneamente "Válido" para una placa de cualquier longitud. Ahora, ejecuta tus pruebas ejecutando `pytest test_plates.py`. `pytest` debería mostrar que al menos una de tus pruebas ha fallado.
+   
+Puedes ejecutar el siguiente comando para verificar tus pruebas usando `check50`, un programa que CS50 usará para probar tu código cuando lo envíes. (¡Ahora hay pruebas para probar tus pruebas!). Asegúrate de probar tus pruebas tú mismo y determinar qué pruebas son necesarias para garantizar que `plates.py` se verifique minuciosamente.
+
+```sh
+check50 cs50/problems/2022/python/tests/plates
+```
+
+Las caritas verdes significan que tu programa ha pasado una prueba. Las caritas rojas indicarán que tu programa produjo algo inesperado. Visita la URL que `check50` proporciona para ver la entrada que `check50` le dio a tu programa, qué salida esperaba y qué salida realmente dio tu programa.
+
+**Cómo Enviar**
+
+En tu terminal, ejecuta el siguiente comando para enviar tu trabajo:
+
+```sh
+submit50 cs50/problems/2022/python/tests/plates
+```

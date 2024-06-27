@@ -1,0 +1,89 @@
+### Reabastecimiento
+
+En un archivo llamado `fuel.py`, reimplementa "Fuel Gauge" del Conjunto de Problemas 3, reestructurando tu código según lo indicado a continuación, donde:
+
+- `convert` espera una cadena en formato X/Y como entrada, donde tanto X como Y son enteros, y devuelve esa fracción como un porcentaje redondeado al entero más cercano entre 0 y 100, inclusive. Si X y/o Y no son enteros, o si X es mayor que Y, entonces `convert` debería generar un `ValueError`. Si Y es 0, entonces `convert` debería generar un `ZeroDivisionError`.
+
+- `gauge` espera un entero y devuelve una cadena que es:
+  - "E" si ese entero es menor o igual a 1,
+  - "F" si ese entero es mayor o igual a 99,
+  - y "Z%" en otros casos, donde Z es ese mismo entero.
+
+```python
+def main():
+    ...
+
+
+def convert(fraction):
+    ...
+
+
+def gauge(percentage):
+    ...
+
+
+if __name__ == "__main__":
+    main()
+```
+
+Luego, en un archivo llamado `test_fuel.py`, implementa dos o más funciones que prueben minuciosamente tus implementaciones de `convert` y `gauge`, cada una de cuyos nombres debería comenzar con `test_` para que puedas ejecutar tus pruebas con:
+
+```sh
+pytest test_fuel.py
+```
+
+#### Consejos
+
+**Antes de Comenzar**
+
+Inicia sesión en cs50.dev, haz clic en tu ventana de terminal y ejecuta `cd` por sí mismo. Deberías ver que el prompt de la ventana de tu terminal se parece a lo siguiente:
+
+```
+$
+```
+
+Luego ejecuta:
+
+```sh
+mkdir test_fuel
+```
+
+para crear una carpeta llamada `test_fuel` en tu espacio de código.
+
+Luego ejecuta:
+
+```sh
+cd test_fuel
+```
+
+para cambiar de directorio a esa carpeta. Ahora deberías ver el prompt de tu terminal como `test_fuel/ $`. Ahora puedes ejecutar:
+
+```sh
+code test_fuel.py
+```
+
+para crear un archivo llamado `test_fuel.py` donde escribirás tus pruebas.
+
+**Cómo Probar**
+
+Para probar tus pruebas, ejecuta `pytest test_fuel.py`. Asegúrate de tener una copia del archivo `fuel.py` en la misma carpeta. Intenta usar versiones correctas e incorrectas de `fuel.py` para determinar qué tan bien tus pruebas detectan errores:
+
+1. Asegúrate de tener una versión correcta de `fuel.py`. Ejecuta tus pruebas ejecutando `pytest test_fuel.py`. `pytest` debería mostrar que todas tus pruebas han pasado.
+2. Modifica la versión correcta de `fuel.py`, cambiando los valores de retorno de `convert`. Por ejemplo, tu programa podría devolver erróneamente una cadena en lugar de un entero. Ejecuta tus pruebas ejecutando `pytest test_fuel.py`. `pytest` debería mostrar que al menos una de tus pruebas ha fallado.
+3. De manera similar, modifica la versión correcta de `fuel.py`, cambiando los valores de retorno de `gauge`. Por ejemplo, tu programa podría omitir el símbolo "%" en la cadena resultante. Ejecuta tus pruebas ejecutando `pytest test_fuel.py`. `pytest` debería mostrar que al menos una de tus pruebas ha fallado.
+
+Puedes ejecutar el siguiente comando para verificar tus pruebas usando `check50`, un programa que CS50 usará para probar tu código cuando lo envíes. (¡Ahora hay pruebas para probar tus pruebas!). Asegúrate de probar tus pruebas tú mismo y determinar qué pruebas son necesarias para garantizar que `fuel.py` se verifique minuciosamente.
+
+```sh
+check50 cs50/problems/2022/python/tests/fuel
+```
+
+Las caritas verdes significan que tu programa ha pasado una prueba. Las caritas rojas indicarán que tu programa produjo algo inesperado. Visita la URL que `check50` proporciona para ver la entrada que `check50` le dio a tu programa, qué salida esperaba y qué salida realmente dio tu programa.
+
+**Cómo Enviar**
+
+En tu terminal, ejecuta el siguiente comando para enviar tu trabajo:
+
+```sh
+submit50 cs50/problems/2022/python/tests/fuel
+```

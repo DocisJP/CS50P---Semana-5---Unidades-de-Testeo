@@ -1,0 +1,13 @@
+### Conjunto de Problemas 5
+
+Para este conjunto de problemas, ¡reimplementarás algunos programas anteriores de manera que también puedas escribir pruebas para tu propio código!
+
+#### Qué Hacer
+
+1. Inicia sesión en cs50.dev, que es una versión en la nube de Visual Studio Code (VS Code) que te proporciona tu propio "espacio de código" con todo lo que necesitas para el curso preinstalado. ¡No es necesario descargar e instalar VS Code o Python en tu propia Mac o PC!
+2. Ejecuta `update50` en la ventana de terminal de tu espacio de código para asegurarte de que esté actualizado; si se te solicita, haz clic en "Rebuild now" (Reconstruir ahora).
+3. Envía todos los problemas a continuación:
+   - Testing my twttr
+   - Back to the Bank
+   - Re-requesting a Vanity Plate
+   - Refueling
